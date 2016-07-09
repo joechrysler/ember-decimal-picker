@@ -1,0 +1,17 @@
+<div class=digit>
+    <div class=fader>
+      {{input type="range" 
+      min=min
+      max=max
+      value=value
+      class=(concat "range-value-" value)}}
+      <div class="min-value">{{min}}</div>
+      <div class="max-value">{{max}}</div>
+  </div>
+  <div class=display>
+      <span class=value>{{value}}</span>
+      {{#if showDecimal}}
+      <span class=decimal>.</span>
+      {{/if}}
+  </div>
+</div>

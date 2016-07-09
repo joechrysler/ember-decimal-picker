@@ -1,0 +1,16 @@
+<div class="decimal-picker">
+  {{fader-control value=units
+                  min=min.units
+                  max=max.units
+                  showDecimal=true}}
+  {{fader-control value=tenths
+                  min=min.tenths
+                  max=max.tenths}}
+  {{fader-control value=hundredths
+                  min=min.hundredths
+                  max=max.hundredths}}
+</div>
+<div class="buttons">
+  <button class="done" {{action 'done'}}>DONE</button>
+  <button class="clear" {{action 'clear'}}>CLEAR</button>
+</div>
